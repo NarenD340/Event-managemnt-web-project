@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <script src="javascript2.js" defer></script>
+    <title>Event Management System</title>
+</head>
+<body>
+    <header> 
+        <h1>Fill the details by sliding the event</h1>
+    </header>
+    <div class="container">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide active">
+                    <h2>Marriage Event</h2>
+                    <label for="marriageBudget">Marriage Budget:</label>
+                    <input type="tel" id="marriageBudget" placeholder="Enter your Marriage budget" required>
+                    <h6></h6>
+                    <label for="marriageInvitations">Number of Invitations:</label>
+                    <input type="tel" id="marriageInvitations" placeholder="In numbers" required>
+                    <h6></h6>
+                    <label for="marriageLocation">Enter the Accurate Location:</label>
+                    <input type="text" id="marriageLocation" placeholder="Address" required>
+                    <h6></h6>
+                    <label for="marriageDate">Date of Marriage:</label>
+                    <input type="date" id="marriageDate" required>
+                    <h6></h6>
+                    <label for="marriageMealType">Meal Type:</label>
+                    <select id="marriageMealType" required>
+                        <option value="">--Select Meal Type--</option>
+                        <option value="Veg">Veg</option>
+                        <option value="Non-Veg">Non-Veg</option>
+                    </select>
+                </div>
+                <div class="slide">
+                    <h2>Birthday Event</h2>
+                    <label for="birthdayBudget">Birthday Budget:</label>
+                    <input type="tel" id="birthdayBudget" placeholder="Enter your Birthday budget" required>
+                    <h6></h6>
+                    <label for="birthdayInvitations">Number of Invitations:</label>
+                    <input type="tel" id="birthdayInvitations" placeholder="In numbers" required>
+                    <h6></h6>
+                    <label for="birthdayLocation">Enter the Accurate Location:</label>
+                    <input type="text" id="birthdayLocation" placeholder="Address" required>
+                    <h6></h6>
+                    <label for="birthdayDate">Date of Birthday:</label>
+                    <input type="date" id="birthdayDate" required>
+                    <h6></h6>
+                    <label for="birthdayMealType">Meal Type:</label>
+                    <select id="birthdayMealType" required>
+                        <option value="">--Select Meal Type--</option>
+                        <option value="Veg">Veg</option>
+                        <option value="Non-Veg">Non-Veg</option>
+                    </select>
+                </div>
+                <div class="slide">
+                    <h2>New Year Party</h2>
+                    <label for="newYearBudget">New Year Budget:</label>
+                    <input type="tel" id="newYearBudget" placeholder="Enter your New Year budget" required>
+                    <h6></h6>
+                    <label for="newYearVenue">New Year Venue:</label>
+                    <input type="text" id="newYearVenue" placeholder="Enter the venue" required>
+                    <h6></h6>
+                    <label for="newYearMealType">Meal Type:</label>
+                    <select id="newYearMealType" required>
+                        <option value="">--Select Meal Type--</option>
+                        <option value="Veg">Veg</option>
+                        <option value="Non-Veg">Non-Veg</option>
+                    </select>
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">Next</button>
+            <button class="submit" onclick="submitForm()">Submit</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Event Management System. All rights reserved by Naren team.</p>
+    </footer>
+</body>
+</html>
+
+
+
+ 
